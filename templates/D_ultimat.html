@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Ruvira Jewellery</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#140b18;
+overflow-x:hidden;
+color:white;
+}
+
+h1,h2,h3{
+font-family:'Cormorant Garamond',serif;
+}
+
+.top-bar{
+background:#D4AF37;
+color:#111;
+text-align:center;
+padding:12px;
+font-weight:600;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(20,11,24,.95);
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:1px solid rgba(255,215,0,.2);
+}
+
+.logo{
+color:#D4AF37;
+font-size:34px;
+font-weight:700;
+}
+
+.menu{
+display:flex;
+gap:30px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+transition:.4s;
+}
+
+.menu a:hover{
+color:#D4AF37;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 8%;
+flex-wrap:wrap;
+}
+
+.left{
+width:50%;
+}
+
+.small-text{
+color:#D4AF37;
+letter-spacing:4px;
+margin-bottom:20px;
+}
+
+.left h1{
+font-size:80px;
+line-height:85px;
+margin-bottom:25px;
+}
+
+.left p{
+color:#ddd;
+line-height:35px;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:18px 40px;
+background:#D4AF37;
+color:#111;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+}
+
+.right{
+width:45%;
+}
+
+.right img{
+width:100%;
+border-radius:30px;
+}
+
+@media(max-width:900px){
+
+.menu{
+display:none;
+}
+
+.left{
+width:100%;
+text-align:center;
+}
+
+.right{
+width:100%;
+margin-top:50px;
+}
+
+.left h1{
+font-size:50px;
+line-height:55px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top-bar">
+
+WELCOME TO RUVIRA JEWELLERY ✨
+
+</div>
+
+<nav class="navbar">
+
+<div class="logo">
+
+RUVIRA
+
+</div>
+
+<div class="menu">
+
+<a href="#home">
+Home
+</a>
+
+<a href="#collection">
+Collection
+</a>
+
+<a href="#new-arrivals">
+New Arrivals
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+</div>
+
+</nav>
+
+<section
+class="hero"
+id="home">
+
+<div class="left">
+
+<div class="small-text">
+
+TIMELESS BEAUTY
+
+</div>
+
+<h1>
+
+Ruvira<br>
+Jewellery
+
+</h1>
+
+<p>
+
+Traditional elegance crafted for every woman.
+Discover premium handmade collections inspired by heritage.
+
+</p>
+
+<a
+href="#collection"
+class="btn">
+
+Explore Collection
+
+</a>
+
+</div>
+
+<div class="right">
+
+<img src="/static/images/banner.jpg">
+
+</div>
+
+</section>
+<section class="horizontal-gallery">
+
+<div class="gallery-track">
+
+<img src="/static/images/1.jpg">
+<img src="/static/images/2.jpg">
+<img src="/static/images/3.jpg">
+<img src="/static/images/4.jpg">
+<img src="/static/images/5.jpg">
+<img src="/static/images/6.jpg">
+<img src="/static/images/7.jpg">
+<img src="/static/images/8.jpg">
+<img src="/static/images/9.jpg">
+<img src="/static/images/10.jpg">
+
+</div>
+
+</section>
+
+<style>
+
+.horizontal-gallery{
+background:#1d1221;
+padding:40px 0;
+overflow:hidden;
+}
+
+.gallery-track{
+display:flex;
+gap:20px;
+width:max-content;
+animation:scroll 30s linear infinite;
+}
+
+.gallery-track img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:20px;
+border:2px solid rgba(255,215,0,.3);
+}
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+.about-section{
+padding:100px 8%;
+background:#1b1020;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.about-left{
+width:45%;
+}
+
+.about-left img{
+width:100%;
+border-radius:30px;
+}
+
+.about-right{
+width:45%;
+}
+
+.about-right span{
+color:#D4AF37;
+letter-spacing:3px;
+}
+
+.about-right h2{
+font-size:65px;
+margin:20px 0;
+}
+
+.about-right p{
+color:#ddd;
+line-height:35px;
+}
+
+@media(max-width:900px){
+
+.about-left,
+.about-right{
+width:100%;
+text-align:center;
+}
+
+.about-right h2{
+font-size:45px;
+}
+
+}
+
+</style>
+
+<section
+class="about-section"
+id="about">
+
+<div class="about-left">
+
+<img src="/static/images/11.jpg">
+
+</div>
+
+<div class="about-right">
+
+<span>
+
+OUR STORY
+
+</span>
+
+<h2>
+
+About Ruvira
+
+</h2>
+
+<p>
+
+Ruvira Jewellery celebrates timeless tradition with modern elegance.
+Every piece is carefully selected to bring beauty, confidence and heritage together.
+
+</p>
+
+</div>
+
+</section>
+
+<style>
+
+.products-section{
+padding:100px 8%;
+background:#140b18;
+text-align:center;
+}
+
+.products-section h2{
+font-size:65px;
+color:#D4AF37;
+margin-bottom:20px;
+}
+
+.products-section p{
+color:#ddd;
+margin-bottom:60px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:#221126;
+border-radius:30px;
+overflow:hidden;
+transition:.5s;
+border:1px solid rgba(255,215,0,.15);
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.product-card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.product-info{
+padding:25px;
+}
+
+.product-info h3{
+font-size:34px;
+color:#D4AF37;
+margin-bottom:15px;
+}
+
+.product-info p{
+color:#ddd;
+line-height:28px;
+margin-bottom:20px;
+}
+
+.order-btn{
+display:inline-block;
+padding:15px 30px;
+background:#D4AF37;
+color:#111;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+}
+
+</style>
+
+<section
+class="products-section"
+id="collection">
+
+<h2>
+
+Featured Collection
+
+</h2>
+
+<p>
+
+Our best handcrafted jewellery pieces.
+
+</p>
+
+<div class="product-grid">
+
+{% for product in products %}
+
+<div class="product-card">
+
+<img src="/uploads/{{ product.image }}">
+
+<div class="product-info">
+
+<h3>
+
+{{ product.name }}
+
+</h3>
+
+<p>
+
+{{ product.description }}
+
+</p>
+
+<a
+href="https://wa.me/918866162970"
+class="order-btn"
+target="_blank">
+
+Order On WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</section>
+<section
+class="products-section"
+id="new-arrivals">
+
+<h2>
+
+New Arrivals
+
+</h2>
+
+<p>
+
+Discover our latest handmade collections.
+
+</p>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="/static/images/9.jpg">
+
+<div class="product-info">
+
+<h3>
+
+Royal Pearl Collection
+
+</h3>
+
+<p>
+
+Premium handcrafted beauty.
+
+</p>
+
+<a
+href="https://wa.me/918866162970"
+class="order-btn"
+target="_blank">
+
+Order On WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="product-card">
+
+<img src="/static/images/10.jpg">
+
+<div class="product-info">
+
+<h3>
+
+Luxury Necklace Set
+
+</h3>
+
+<p>
+
+Traditional elegance for every occasion.
+
+</p>
+
+<a
+href="https://wa.me/918866162970"
+class="order-btn"
+target="_blank">
+
+Order On WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="product-card">
+
+<img src="/static/images/11.jpg">
+
+<div class="product-info">
+
+<h3>
+
+Festival Special
+
+</h3>
+
+<p>
+
+Beautiful handcrafted design.
+
+</p>
+
+<a
+href="https://wa.me/918866162970"
+class="order-btn"
+target="_blank">
+
+Order On WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="product-card">
+
+<img src="/static/images/12.jpg">
+
+<div class="product-info">
+
+<h3>
+
+Signature Collection
+
+</h3>
+
+<p>
+
+Inspired by timeless heritage.
+
+</p>
+
+<a
+href="https://wa.me/918866162970"
+class="order-btn"
+target="_blank">
+
+Order On WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<style>
+
+.contact-section{
+padding:100px 8%;
+background:#1b1020;
+text-align:center;
+}
+
+.contact-section h2{
+font-size:60px;
+color:#D4AF37;
+margin-bottom:20px;
+}
+
+.contact-section p{
+color:#ddd;
+margin-bottom:50px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.contact-card{
+background:#221126;
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(255,215,0,.15);
+}
+
+.contact-card h3{
+color:#D4AF37;
+margin-bottom:20px;
+}
+
+.contact-card p{
+color:#ddd;
+line-height:30px;
+}
+
+</style>
+
+
+
+<section
+class="contact-section"
+id="contact">
+
+<h2>
+
+Contact Us
+
+</h2>
+
+<p>
+
+We are always ready to help you.
+
+</p>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>
+
+WhatsApp
+
+</h3>
+
+<p>
+
+Quick support and ordering.
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+
+Email
+
+</h3>
+
+<p>
+
+ruvirajewellery@gmail.com
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+
+Location
+
+</h3>
+
+<p>
+
+India
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<style>
+
+.review-section{
+padding:100px 8%;
+background:#140b18;
+text-align:center;
+}
+
+.review-section h2{
+font-size:65px;
+color:#D4AF37;
+margin-bottom:60px;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.review-card{
+background:#221126;
+padding:40px;
+border-radius:30px;
+border:1px solid rgba(255,215,0,.15);
+}
+
+.review-card h3{
+color:#D4AF37;
+margin-bottom:20px;
+}
+
+.review-card p{
+color:#ddd;
+line-height:30px;
+}
+
+.footer{
+background:#0d0810;
+padding:80px 8%;
+text-align:center;
+}
+
+.footer h2{
+color:#D4AF37;
+font-size:50px;
+margin-bottom:20px;
+}
+
+.footer p{
+color:#ddd;
+margin:12px 0;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:35px;
+text-decoration:none;
+z-index:999;
+box-shadow:0 0 25px rgba(0,0,0,.3);
+}
+
+</style>
+
+
+
+<section class="review-section">
+
+<h2>
+
+Customer Reviews
+
+</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+<h3>
+
+★★★★★
+
+</h3>
+
+<p>
+
+Beautiful quality and amazing service.
+Loved every detail.
+
+</p>
+
+</div>
+
+<div class="review-card">
+
+<h3>
+
+★★★★★
+
+</h3>
+
+<p>
+
+Perfect traditional jewellery collection for festivals.
+
+</p>
+
+</div>
+
+<div class="review-card">
+
+<h3>
+
+★★★★★
+
+</h3>
+
+<p>
+
+Premium designs and elegant finishing.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer class="footer">
+
+<h2>
+
+RUVIRA JEWELLERY
+
+</h2>
+
+<p>
+
+Timeless Beauty, Tradition Redefined
+
+</p>
+
+<p>
+
+WhatsApp Orders Available
+
+</p>
+
+<p>
+
+© 2026 Ruvira Jewellery. All Rights Reserved.
+
+</p>
+
+</footer>
+
+
+
+<a
+href="https://wa.me/918866162970"
+class="whatsapp-float"
+target="_blank">
+
+💬
+
+</a>
+<style>
+
+.faq-section{
+padding:100px 8%;
+background:#1b1020;
+}
+
+.faq-section h2{
+text-align:center;
+font-size:60px;
+color:#D4AF37;
+margin-bottom:50px;
+}
+
+.faq-item{
+background:#221126;
+padding:30px;
+border-radius:25px;
+margin-bottom:20px;
+}
+
+.faq-item h3{
+color:#D4AF37;
+margin-bottom:15px;
+}
+
+.faq-item p{
+color:#ddd;
+line-height:30px;
+}
+
+.newsletter-section{
+padding:100px 8%;
+background:#140b18;
+text-align:center;
+}
+
+.newsletter-section h2{
+font-size:55px;
+color:#D4AF37;
+margin-bottom:20px;
+}
+
+.newsletter-section input{
+width:90%;
+max-width:500px;
+padding:18px;
+border:none;
+border-radius:50px;
+margin-top:20px;
+}
+
+.newsletter-btn{
+display:inline-block;
+margin-top:25px;
+padding:18px 40px;
+background:#D4AF37;
+color:#111;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+}
+
+.top-btn{
+position:fixed;
+left:25px;
+bottom:25px;
+width:60px;
+height:60px;
+background:#D4AF37;
+color:#111;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:28px;
+text-decoration:none;
+z-index:999;
+}
+
+</style>
+
+
+
+<section class="faq-section">
+
+<h2>
+
+Frequently Asked Questions
+
+</h2>
+
+<div class="faq-item">
+
+<h3>
+
+How to order?
+
+</h3>
+
+<p>
+
+Simply contact us on WhatsApp and place your order.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+
+Do you provide delivery?
+
+</h3>
+
+<p>
+
+Yes, delivery is available across India.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+
+Are designs customizable?
+
+</h3>
+
+<p>
+
+Selected products can be customized.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<section class="newsletter-section">
+
+<h2>
+
+Join Our Newsletter
+
+</h2>
+
+<p style="color:#ddd;">
+
+Get updates about new collections.
+
+</p>
+
+<input
+type="email"
+placeholder="Enter your email">
+
+<br>
+
+<a
+href="https://wa.me/918866162970"
+class="newsletter-btn">
+
+Subscribe
+
+</a>
+
+</section>
+
+
+
+<a
+href="#home"
+class="top-btn">
+
+↑
+
+</a>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Add Product</title>
+
+    <style>
+
+        body{
+            background:#140b18;
+            color:white;
+            font-family:Arial;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+
+        .box{
+            background:#221126;
+            padding:40px;
+            border-radius:20px;
+            width:400px;
+        }
+
+        h1{
+            text-align:center;
+            color:#D4AF37;
+            margin-bottom:30px;
+        }
+
+        input,
+        textarea,
+        select{
+            width:100%;
+            padding:15px;
+            margin-bottom:20px;
+            border:none;
+            border-radius:10px;
+            box-sizing:border-box;
+        }
+
+        button{
+            width:100%;
+            padding:15px;
+            background:#D4AF37;
+            color:black;
+            border:none;
+            border-radius:10px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="box">
+
+<h1>Add Product</h1>
+
+<form action="/add-product"
+      method="post"
+      enctype="multipart/form-data">
+
+    <input
+        type="text"
+        name="name"
+        placeholder="Product Name"
+        required
+    >
+
+    <input
+        type="text"
+        name="price"
+        placeholder="Price"
+        required
+    >
+
+    <textarea
+        name="description"
+        placeholder="Description"
+        required>
+    </textarea>
+
+    <select name="category" required>
+
+        <option value="">
+            Select Category
+        </option>
+
+        <option value="Necklace">
+            Necklace
+        </option>
+
+        <option value="Ring">
+            Ring
+        </option>
+
+        <option value="Earrings">
+            Earrings
+        </option>
+
+        <option value="Bangle">
+            Bangle
+        </option>
+
+        <option value="Bracelet">
+            Bracelet
+        </option>
+
+    </select>
+
+    <input
+        type="file"
+        name="image"
+        required
+    >
+     <select name="image_size" required>
+
+    <option value="small">
+        Small Image
+    </option>
+
+    <option value="medium" selected>
+        Medium Image
+    </option>
+
+    <option value="large">
+        Large Image
+    </option>
+
+</select>
+    <button type="submit">
+        Add Product
+    </button>
+
+</form>
+
+</div>
+
+</body>
+</html>

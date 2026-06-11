@@ -1,0 +1,22 @@
+body{
+    background:#140b18;
+    color:white;
+    font-family:Arial;
+}
+
+a{
+    text-decoration:none;
+}
+
+button{
+    cursor:pointer;
+}
+
+img{
+    max-width:100%;
+}
+
+.card{
+    background:#221126;
+    border-radius:20px;
+}

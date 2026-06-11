@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Edit Product</title>
+
+    <style>
+
+        body{
+            background:#140b18;
+            color:white;
+            font-family:Arial;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+
+        .box{
+            background:#221126;
+            padding:40px;
+            border-radius:20px;
+            width:400px;
+        }
+
+        h1{
+            text-align:center;
+            color:#D4AF37;
+            margin-bottom:30px;
+        }
+
+        input,
+        textarea,
+        select{
+            width:100%;
+            padding:15px;
+            margin-bottom:20px;
+            border:none;
+            border-radius:10px;
+            box-sizing:border-box;
+        }
+
+        img{
+            width:200px;
+            border-radius:15px;
+            display:block;
+            margin:auto;
+            margin-bottom:20px;
+        }
+
+        button{
+            width:100%;
+            padding:15px;
+            background:#D4AF37;
+            color:black;
+            border:none;
+            border-radius:10px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="box">
+
+<h1>Edit Product</h1>
+
+<form action="/edit/{{ product.id }}"
+      method="post"
+      enctype="multipart/form-data">
+
+    <input
+        type="text"
+        name="name"
+        value="{{ product.name }}"
+        required
+    >
+
+    <input
+        type="text"
+        name="price"
+        value="{{ product.price }}"
+        required
+    >
+
+    <textarea
+        name="description"
+        required>{{ product.description }}</textarea>
+
+    <select name="category" required>
+
+        <option value="{{ product.category }}">
+            {{ product.category }}
+        </option>
+
+        <option value="Necklace">
+            Necklace
+        </option>
+
+        <option value="Ring">
+            Ring
+        </option>
+
+        <option value="Earrings">
+            Earrings
+        </option>
+
+        <option value="Bangle">
+            Bangle
+        </option>
+
+        <option value="Bracelet">
+            Bracelet
+        </option>
+
+    </select>
+
+    <img src="/uploads/{{ product.image }}">
+
+    <input
+        type="file"
+        name="image"
+    >
+
+    <button type="submit">
+        Update Product
+    </button>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Ruvira Admin Login</title>
+
+    <style>
+
+        body{
+            background:#140b18;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            font-family:Arial;
+        }
+
+        .login-box{
+            background:#221126;
+            padding:40px;
+            border-radius:20px;
+            width:350px;
+            text-align:center;
+        }
+
+        h1{
+            color:#D4AF37;
+            margin-bottom:30px;
+        }
+
+        input{
+            width:100%;
+            padding:15px;
+            margin-bottom:20px;
+            border:none;
+            border-radius:10px;
+            box-sizing:border-box;
+        }
+
+        button{
+            width:100%;
+            padding:15px;
+            background:#D4AF37;
+            color:black;
+            border:none;
+            border-radius:10px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        button:hover{
+            opacity:0.9;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="login-box">
+
+    <h1>Ruvira Admin Login</h1>
+
+    <form action="/admin" method="post">
+
+        <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            required
+        >
+
+        <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+        >
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

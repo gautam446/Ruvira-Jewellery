@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ product.name }}</title>
+
+    <style>
+
+        body{
+            background:#140b18;
+            color:white;
+            font-family:Arial;
+            padding:40px;
+        }
+
+        .box{
+            background:#221126;
+            padding:30px;
+            border-radius:20px;
+        }
+
+        img{
+            width:300px;
+            border-radius:20px;
+        }
+
+        h1{
+            color:#D4AF37;
+        }
+
+        .price{
+            color:#D4AF37;
+            font-size:30px;
+        }
+
+        .review{
+            background:#2b1830;
+            padding:20px;
+            border-radius:15px;
+            margin-top:20px;
+        }
+
+        input,
+        textarea{
+            width:100%;
+            padding:15px;
+            margin-bottom:20px;
+            border:none;
+            border-radius:10px;
+            box-sizing:border-box;
+        }
+
+        button{
+            background:#D4AF37;
+            color:black;
+            padding:15px;
+            border:none;
+            border-radius:10px;
+            width:100%;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="box">
+
+    <img src="/uploads/{{ product.image }}">
+
+    <h1>{{ product.name }}</h1>
+
+    <h2 class="price">
+        ₹ {{ product.price }}
+    </h2>
+
+    <p>{{ product.description }}</p>
+
+    <h3>Category:
+        {{ product.category }}
+    </h3>
+
+</div>
+
+<h1>Customer Reviews</h1>
+
+{% for review in reviews %}
+
+<div class="review">
+
+    <h3>{{ review.customer_name }}</h3>
+
+    <h4>⭐ {{ review.rating }}/5</h4>
+
+    <p>{{ review.comment }}</p>
+
+</div>
+
+{% endfor %}
+
+<h1>Add Review</h1>
+
+<form action="/add-review/{{ product.id }}"
+      method="post">
+
+    <input
+        type="text"
+        name="customer_name"
+        placeholder="Your Name"
+        required
+    >
+
+    <input
+        type="number"
+        name="rating"
+        min="1"
+        max="5"
+        required
+    >
+
+    <textarea
+        name="comment"
+        placeholder="Write Review"
+        required>
+    </textarea>
+
+    <button type="submit">
+        Submit Review
+    </button>
+
+</form>
+
+</body>
+</html>

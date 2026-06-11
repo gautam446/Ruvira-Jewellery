@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Manage Categories</title>
+
+<style>
+
+body{
+    background:#140b18;
+    color:white;
+    font-family:Arial;
+    padding:40px;
+}
+
+input{
+    padding:15px;
+    width:300px;
+    border:none;
+    border-radius:10px;
+}
+
+button{
+    padding:15px;
+    background:#D4AF37;
+    border:none;
+    border-radius:10px;
+}
+
+.card{
+    background:#221126;
+    padding:20px;
+    margin-top:20px;
+    border-radius:20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Manage Categories</h1>
+
+<form action="/add-category" method="post">
+
+<input
+type="text"
+name="category_name"
+placeholder="Category Name"
+required>
+
+<button type="submit">
+Add Category
+</button>
+
+</form>
+
+{% for category in categories %}
+
+<div class="card">
+
+<h2>{{ category.name }}</h2>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>

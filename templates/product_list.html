@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ruvira Products</title>
+
+    <style>
+
+        body{
+            background:#140b18;
+            color:white;
+            font-family:Arial;
+            padding:40px;
+        }
+
+        h1{
+            color:#D4AF37;
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        form{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        input{
+            padding:15px;
+            width:300px;
+            border:none;
+            border-radius:10px;
+        }
+
+        button{
+            padding:15px 20px;
+            background:#D4AF37;
+            border:none;
+            border-radius:10px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        .card{
+            background:#221126;
+            padding:20px;
+            border-radius:20px;
+            margin-bottom:30px;
+        }
+
+        img{
+            width:200px;
+            border-radius:15px;
+        }
+
+        a{
+            display:inline-block;
+            margin-top:15px;
+            padding:12px 20px;
+            text-decoration:none;
+            border-radius:10px;
+            font-weight:bold;
+        }
+
+        .edit{
+            background:#D4AF37;
+            color:black;
+        }
+
+        .delete{
+            background:red;
+            color:white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>All Products</h1>
+
+<form action="/products" method="get">
+
+    <input
+        type="text"
+        name="search"
+        placeholder="Search Product..."
+        value="{{ search }}"
+    >
+
+    <button type="submit">
+        Search
+    </button>
+
+</form>
+
+{% for product in products %}
+
+<div class="card">
+
+    <img src="/uploads/{{ product.image }}">
+
+    <h2>{{ product.name }}</h2>
+
+    <h3>₹ {{ product.price }}</h3>
+
+    <p>{{ product.description }}</p>
+
+    <a
+        href="/edit/{{ product.id }}"
+        class="edit">
+
+        Edit
+
+    </a>
+
+    <a
+        href="/delete/{{ product.id }}"
+        class="delete">
+
+        Delete
+
+    </a>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>

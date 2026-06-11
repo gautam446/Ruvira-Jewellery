@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Featured Products</title>
+
+<style>
+
+body{
+    background:#140b18;
+    color:white;
+    font-family:Arial;
+    padding:40px;
+}
+
+h1{
+    color:#D4AF37;
+}
+
+.card{
+    background:#221126;
+    padding:20px;
+    border-radius:20px;
+    margin-bottom:30px;
+}
+
+img{
+    width:200px;
+    border-radius:15px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Featured Products</h1>
+
+{% for product in products %}
+
+<div class="card">
+
+    <img src="/uploads/{{ product.image }}">
+
+    <h2>{{ product.name }}</h2>
+
+    <h3>₹ {{ product.price }}</h3>
+
+    <p>{{ product.description }}</p>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>
