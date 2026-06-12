@@ -34,7 +34,7 @@ body{
 font-family:'Poppins',sans-serif;
 background:#FFF8F5;
 overflow-x:hidden;
-color:black;
+color:#111;
 }
 
 h1,h2,h3{
@@ -54,11 +54,11 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 8%;
-background:rgba(20,11,24,.95);
+background:white;
 position:sticky;
 top:0;
 z-index:1000;
-border-bottom:1px solid rgba(255,215,0,.2);
+border-bottom:2px solid #D4AF37;
 }
 
 .logo{
@@ -73,9 +73,10 @@ gap:30px;
 }
 
 .menu a{
-color:white;
+color:#111;
 text-decoration:none;
 transition:.4s;
+font-weight:500;
 }
 
 .menu a:hover{
@@ -108,7 +109,7 @@ margin-bottom:25px;
 }
 
 .left p{
-color:black;
+color:#111;
 line-height:35px;
 margin-bottom:35px;
 }
@@ -130,6 +131,7 @@ width:45%;
 .right img{
 width:100%;
 border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 @media(max-width:900px){
@@ -244,6 +246,7 @@ Explore Collection
 </div>
 
 </section>
+
 <section class="horizontal-gallery">
 
 <div class="gallery-track">
@@ -283,7 +286,8 @@ width:220px;
 height:220px;
 object-fit:cover;
 border-radius:20px;
-border:2px solid rgba(255,215,0,.3);
+border:2px solid #D4AF37;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 @keyframes scroll{
@@ -307,7 +311,6 @@ align-items:center;
 gap:60px;
 flex-wrap:wrap;
 }
-
 .about-left{
 width:45%;
 }
@@ -315,6 +318,7 @@ width:45%;
 .about-left img{
 width:100%;
 border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .about-right{
@@ -329,10 +333,11 @@ letter-spacing:3px;
 .about-right h2{
 font-size:65px;
 margin:20px 0;
+color:#111;
 }
 
 .about-right p{
-color:black;
+color:#111;
 line-height:35px;
 }
 
@@ -402,7 +407,7 @@ margin-bottom:20px;
 }
 
 .products-section p{
-color:black;
+color:#111;
 margin-bottom:60px;
 }
 
@@ -411,12 +416,14 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 }
+
 .product-card{
- background:#FFFFFF;
- border-radius:30px;
- overflow:hidden;
- transition:.5s;
- border:1px solid #E8DAD5;
+background:white;
+border-radius:30px;
+overflow:hidden;
+transition:.5s;
+border:2px solid #D4AF37;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 .product-card:hover{
@@ -440,7 +447,7 @@ margin-bottom:15px;
 }
 
 .product-info p{
-color:black;
+color:#111;
 line-height:28px;
 margin-bottom:20px;
 }
@@ -562,8 +569,6 @@ Order On WhatsApp
 
 </div>
 
-
-
 <div class="product-card">
 
 <img src="/static/images/10.jpg">
@@ -595,8 +600,6 @@ Order On WhatsApp
 
 </div>
 
-
-
 <div class="product-card">
 
 <img src="/static/images/11.jpg">
@@ -627,8 +630,6 @@ Order On WhatsApp
 </div>
 
 </div>
-
-
 
 <div class="product-card">
 
@@ -665,8 +666,6 @@ Order On WhatsApp
 
 </section>
 
-
-
 <style>
 
 .contact-section{
@@ -682,7 +681,7 @@ margin-bottom:20px;
 }
 
 .contact-section p{
-color:black;
+color:#111;
 margin-bottom:50px;
 }
 
@@ -693,10 +692,11 @@ gap:30px;
 }
 
 .contact-card{
-background:#FFF8F5;
+background:white;
 padding:40px;
 border-radius:30px;
-border:1px solid rgba(255,215,0,.15);
+border:2px solid #D4AF37;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 .contact-card h3{
@@ -705,13 +705,11 @@ margin-bottom:20px;
 }
 
 .contact-card p{
-color:black;
+color:#111;
 line-height:30px;
 }
 
 </style>
-
-
 
 <section
 class="contact-section"
@@ -782,135 +780,258 @@ India
 </div>
 
 </section>
+<section
+class="products-section"
+id="new-arrivals">
+
+<h2>
+
+New Arrivals
+
+</h2>
+
+<p>
+
+Discover our latest handmade collections.
+
+</p>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="/static/images/9.jpg">
+
+<div class="product-info">
+
+<h3>
+
+Royal Pearl Collection
+
+</h3>
+
+<p>
+
+Premium handcrafted beauty.
+
+</p>
+
+<a
+href="https://wa.me/918866162970"
+class="order-btn"
+target="_blank">
+
+Order On WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="/static/images/10.jpg">
+
+<div class="product-info">
+
+<h3>
+
+Luxury Necklace Set
+
+</h3>
+
+<p>
+
+Traditional elegance for every occasion.
+
+</p>
+
+<a
+href="https://wa.me/918866162970"
+class="order-btn"
+target="_blank">
+
+Order On WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="/static/images/11.jpg">
+
+<div class="product-info">
+
+<h3>
+
+Festival Special
+
+</h3>
+
+<p>
+
+Beautiful handcrafted design.
+
+</p>
+
+<a
+href="https://wa.me/918866162970"
+class="order-btn"
+target="_blank">
+
+Order On WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="/static/images/12.jpg">
+
+<div class="product-info">
+
+<h3>
+
+Signature Collection
+
+</h3>
+
+<p>
+
+Inspired by timeless heritage.
+
+</p>
+
+<a
+href="https://wa.me/918866162970"
+class="order-btn"
+target="_blank">
+
+Order On WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 <style>
 
-.review-section{
+.contact-section{
 padding:100px 8%;
 background:#FFF8F5;
 text-align:center;
 }
 
-.review-section h2{
-font-size:65px;
+.contact-section h2{
+font-size:60px;
 color:#D4AF37;
-margin-bottom:60px;
+margin-bottom:20px;
 }
 
-.review-grid{
+.contact-section p{
+color:#111;
+margin-bottom:50px;
+}
+
+.contact-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 }
 
-.review-card{
-background:#FFF8F5;
+.contact-card{
+background:white;
 padding:40px;
 border-radius:30px;
-border:1px solid rgba(255,215,0,.15);
+border:2px solid #D4AF37;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-.review-card h3{
+.contact-card h3{
 color:#D4AF37;
 margin-bottom:20px;
 }
 
-.review-card p{
-color:black;
+.contact-card p{
+color:#111;
 line-height:30px;
-}
-
-.footer{
-background:#FFF8F5;
-padding:80px 8%;
-text-align:center;
-}
-
-.footer h2{
-color:#D4AF37;
-font-size:50px;
-margin-bottom:20px;
-}
-
-.footer p{
-color:black;
-margin:12px 0;
-}
-
-.whatsapp-float{
-position:fixed;
-bottom:25px;
-right:25px;
-width:70px;
-height:70px;
-background:#25D366;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:35px;
-text-decoration:none;
-z-index:999;
-box-shadow:0 0 25px rgba(0,0,0,.3);
 }
 
 </style>
 
-
-
-<section class="review-section">
+<section
+class="contact-section"
+id="contact">
 
 <h2>
 
-Customer Reviews
+Contact Us
 
 </h2>
 
-<div class="review-grid">
+<p>
 
-<div class="review-card">
+We are always ready to help you.
+
+</p>
+
+<div class="contact-grid">
+
+<div class="contact-card">
 
 <h3>
 
-★★★★★
+WhatsApp
 
 </h3>
 
 <p>
 
-Beautiful quality and amazing service.
-Loved every detail.
+Quick support and ordering.
 
 </p>
 
 </div>
 
-<div class="review-card">
+<div class="contact-card">
 
 <h3>
 
-★★★★★
+Email
 
 </h3>
 
 <p>
 
-Perfect traditional jewellery collection for festivals.
+ruvirajewellery@gmail.com
 
 </p>
 
 </div>
 
-<div class="review-card">
+<div class="contact-card">
 
 <h3>
 
-★★★★★
+Location
 
 </h3>
 
 <p>
 
-Premium designs and elegant finishing.
+India
 
 </p>
 
@@ -919,78 +1040,6 @@ Premium designs and elegant finishing.
 </div>
 
 </section>
-
-
-
-<footer class="footer">
-
-<h2>
-
-RUVIRA JEWELLERY
-
-</h2>
-
-<p>
-
-Timeless Beauty, Tradition Redefined
-
-</p>
-
-<p>
-
-WhatsApp Orders Available
-
-</p>
-
-<p>
-
-© 2026 Ruvira Jewellery. All Rights Reserved.
-
-</p>
-
-</footer>
-
-
-
-<a
-href="https://wa.me/918866162970"
-class="whatsapp-float"
-target="_blank">
-
-💬
-
-</a>
-<style>
-
-.faq-section{
-padding:100px 8%;
-background:#FFF8F5;
-}
-
-.faq-section h2{
-text-align:center;
-font-size:60px;
-color:#D4AF37;
-margin-bottom:50px;
-}
-
-.faq-item{
-background:#FFF8F5;
-padding:30px;
-border-radius:25px;
-margin-bottom:20px;
-}
-
-.faq-item h3{
-color:#D4AF37;
-margin-bottom:15px;
-}
-
-.faq-item p{
-color:black;
-line-height:30px;
-}
-
 .newsletter-section{
 padding:100px 8%;
 background:#FFF8F5;
@@ -1003,13 +1052,19 @@ color:#D4AF37;
 margin-bottom:20px;
 }
 
+.newsletter-section p{
+color:#111;
+}
+
 .newsletter-section input{
 width:90%;
 max-width:500px;
 padding:18px;
 border:none;
+outline:none;
 border-radius:50px;
 margin-top:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 .newsletter-btn{
@@ -1041,8 +1096,6 @@ z-index:999;
 }
 
 </style>
-
-
 
 <section class="faq-section">
 
@@ -1102,8 +1155,6 @@ Selected products can be customized.
 
 </section>
 
-
-
 <section class="newsletter-section">
 
 <h2>
@@ -1112,7 +1163,7 @@ Join Our Newsletter
 
 </h2>
 
-<p style="color:black;">
+<p>
 
 Get updates about new collections.
 
@@ -1133,8 +1184,6 @@ Subscribe
 </a>
 
 </section>
-
-
 
 <a
 href="#home"
