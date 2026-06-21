@@ -19,8 +19,8 @@ app = FastAPI()
 
 cloudinary.config(
     cloud_name="dkkvyyyio",
-    api_key="261945847968321",
-    api_secret="m15YC23G-55tF6ITRhkEXQdvoi8"
+    api_key="469827881641272",
+    api_secret="-nekALKnajAEIZ7quSNV6SI4KRA"
 )
 
 
