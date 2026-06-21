@@ -20,7 +20,7 @@ app = FastAPI()
 cloudinary.config(
     cloud_name="dkkvyyyio",
     api_key="261945847968321",
-    api_secret="mI5YC23G-55tF6ITRhkEXQdv0i8"
+    api_secret="m15YC23G-55tF6ITRhkEXQdvoi8"
 )
 
 
@@ -101,9 +101,9 @@ async def admin_login(
 ):
 
     if (
-        username == "Gautam"
+        username == "Ruvira"
         and
-        password == "Gautam@4432"
+        password == "Ruvira@2007"
     ):
 
         return RedirectResponse(
