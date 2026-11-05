@@ -6,3 +6,4 @@ sqlalchemy
 psycopg2-binary
 cloudinary
 psycopg[binary]
+python-dotenv
